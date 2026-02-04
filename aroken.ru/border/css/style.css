@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #333;
+}
+
+.title-h1 {
+  color: white;
+  font-family: sans-serif;
+}
+
+.card {
+  color: #fff;
+  font-family: sans-serif;
+  max-width: 350px;
+  border: #fff 5px solid;
+  border-radius: 10px;
+  margin: 40px;
+  display: inline-block;
+}
+
+.img {
+  min-height: 200px;
+}
+
+.card-content {
+  padding: 15px;
+}
