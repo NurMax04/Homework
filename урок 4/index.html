@@ -1,73 +1,73 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Урок 4</title>
+		<title>Практика по формам</title>
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
-		<table>
-			<caption>
-				Июнь 2025
-			</caption>
-			<thead>
-				<tr>
-					<th>Пн</th>
-					<th>Вт</th>
-					<th>Ср</th>
-					<th>Чт</th>
-					<th>Пт</th>
-					<th class="red">Сб</th>
-					<th class="red">Вс</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td colspan="6"></td>
-					<td class="red">01</td>
-				</tr>
-				<tr>
-					<td>02</td>
-					<td>03</td>
-					<td>04</td>
-					<td>05</td>
-					<td>06</td>
-					<td class="red">07</td>
-					<td class="red">08</td>
-				</tr>
-				<tr>
-					<td>09</td>
-					<td>10</td>
-					<td>11</td>
-					<td>12</td>
-					<td>13</td>
-					<td class="red">14</td>
-					<td class="red">15</td>
-				</tr>
-				<tr>
-					<td>16</td>
-					<td>17</td>
-					<td>18</td>
-					<td>19</td>
-					<td>20</td>
-					<td class="red">21</td>
-					<td class="red">22</td>
-				</tr>
-				<tr>
-					<td>23</td>
-					<td>24</td>
-					<td>25</td>
-					<td>26</td>
-					<td>27</td>
-					<td class="red">28</td>
-					<td class="red">29</td>
-				</tr>
-				<tr>
-					<td>30</td>
-					<td colspan="6"></td>
-				</tr>
-			</tbody>
-		</table>
+		<form>
+			<fieldset>
+				<h3 class="title">Ваши личные данные</h3>
+				<label>
+					Ваше имя
+					<input
+						class="input"
+						type="text"
+						placeholder="Имя"
+						name="name"
+						required
+					/>
+				</label>
+				<label>
+					Ваш возраст
+					<input
+						class="input"
+						type="number"
+						placeholder="Возраст"
+						name="numeric"
+						name="age"
+						required
+					/>
+				</label>
+				<label>
+					Ваш номер телефона
+					<input
+						class="input"
+						type="tel"
+						placeholder="Номер телефона"
+						name="tel"
+						inputmode="tel"
+						required
+					/>
+				</label>
+				<label>
+					Ваша почта
+					<input
+						class="input"
+						type="email"
+						name="email"
+						placeholder="Email/Gmail"
+						required
+					/>
+				</label>
+				<label>
+					Сообщение
+					<textarea
+						class="input"
+						required
+						name="message"
+						placeholder="Сообщение"
+					></textarea>
+				</label>
+				<label class="label">
+					<input type="checkbox" name="zxzx" value="zxzx" /> Я принимаю правила
+				</label>
+				<button class="button">
+					<a href="./video/Voicy_rickroll.mp4">Отправить</a>
+				</button>
+			</fieldset>
+		</form>
 	</body>
 </html>

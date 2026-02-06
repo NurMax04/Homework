@@ -1,21 +1,43 @@
-table {
-	border-spacing: 0;
-	margin: 50px 0 0 50px;
-	border-collapse: collapse;
+body {
 	font-family: sans-serif;
+	max-width: 350px;
+	font-size: 18px;
 }
 
-td,
-th,
-caption {
-	border: solid 1px #000;
+form {
+	border-radius: 10px;
 }
 
-caption {
+fieldset {
+	border-radius: 15px;
+}
+
+label {
+	display: block;
+	margin-top: 15px;
+}
+
+.title {
 	font-weight: bold;
-	border-bottom: none;
 }
 
-.red {
-	color: #f00;
+input,
+textarea {
+	display: block;
+	resize: vertical;
+	max-height: 150px;
+}
+
+.input {
+	width: 230px;
+}
+
+.button {
+	cursor: pointer;
+	border: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
 }
