@@ -1,0 +1,42 @@
+html {
+	font-family: sans-serif;
+}
+
+body * {
+	box-sizing: border-box;
+}
+
+.header {
+	max-width: 1220px;
+	padding: 15px;
+	margin: 0 auto;
+	border-bottom: 1px solid #747272;
+}
+
+.header-container {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.a {
+	display: flex;
+	gap: 30px;
+}
+
+.title {
+	color: #000;
+	font-weight: 600;
+}
+
+.phone {
+	font-weight: 500;
+}
+
+.logo {
+	width: 40px;
+	height: 40px;
+	background-color: #000;
+	cursor: pointer;
+}
