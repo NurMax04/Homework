@@ -42,7 +42,7 @@
 	color: #3596ed;
 }
 
-.container p {
+.container .copy {
 	font-weight: 400;
 	font-size: 14px;
 	letter-spacing: 0.04em;
