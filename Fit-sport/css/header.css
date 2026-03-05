@@ -23,6 +23,6 @@
 	transition: color 0.2s;
 }
 
-.phone:hover {
+.phone:hover a {
 	color: #3596ed;
 }
