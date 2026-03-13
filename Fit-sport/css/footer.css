@@ -9,18 +9,18 @@
 	text-align: center;
 }
 
-.footer-top {
+.footer__top {
 	padding-bottom: 40px;
 	margin-bottom: 40px;
 	border-bottom: 1px solid #d3cbd9;
 }
 
-.footer-logo {
+.footer__logo {
 	display: inline-block;
 	margin-bottom: 40px;
 }
 
-.menu ul {
+.footer__menu-ul {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -30,7 +30,7 @@
 	padding: 0;
 }
 
-.menu a {
+.footer__menu-link {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 130%;
@@ -38,7 +38,7 @@
 	transition: color 0.2s;
 }
 
-.menu a:hover {
+.footer__menu-link:hover {
 	color: #3596ed;
 }
 
@@ -50,7 +50,7 @@
 }
 
 @media (width <= 768px) {
-	.menu ul {
+	.footer__menu-ul {
 		flex-direction: column;
 		gap: 25px;
 	}

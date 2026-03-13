@@ -14,8 +14,8 @@
 	<body>
 		<header class="header">
 			<div class="container">
-				<div class="header-inner">
-					<a href="/">
+				<div class="header__inner">
+					<a class="header__logo-img" href="/">
 						<img
 							src="./img/logo-icon.svg"
 							width="84"
@@ -23,9 +23,11 @@
 							alt="Логотип"
 						/>
 					</a>
-					<div class="text-sub phone">
-						<p>Первое посещение бесплатно</p>
-						<a href="+79282822882">+7 (928) 282-28-82</a>
+					<div class="header__phone text-sub">
+						<p class="header__phone-text">Первое посещение бесплатно</p>
+						<a class="header__phone-link" href="+79282822882"
+							>+7 (928) 282-28-82</a
+						>
 					</div>
 				</div>
 			</div>
@@ -108,9 +110,9 @@
 			</section>
 		</article>
 		<footer class="footer">
-			<div class="footer-top">
+			<div class="footer__top">
 				<div class="container">
-					<a class="footer-logo" href="/">
+					<a class="footer__logo" href="/">
 						<img
 							src="./img/logo-icon.svg"
 							width="84"
@@ -118,13 +120,15 @@
 							alt="Логотип"
 						/>
 					</a>
-					<nav class="menu">
-						<ul>
-							<li><a href="#">Клубы</a></li>
-							<li><a href="#">Тренировки</a></li>
-							<li><a href="#">Абонементы</a></li>
-							<li><a href="#">Программа лояльности</a></li>
-							<li><a href="#">Контакты</a></li>
+					<nav class="footer__menu">
+						<ul class="footer__menu-ul">
+							<li><a class="footer__menu-link" href="#">Клубы</a></li>
+							<li><a class="footer__menu-link" href="#">Тренировки</a></li>
+							<li><a class="footer__menu-link" href="#">Абонементы</a></li>
+							<li>
+								<a class="footer__menu-link" href="#">Программа лояльности</a>
+							</li>
+							<li><a class="footer__menu-link" href="#">Контакты</a></li>
 						</ul>
 					</nav>
 				</div>

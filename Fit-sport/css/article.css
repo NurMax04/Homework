@@ -3,6 +3,10 @@
 	padding-bottom: 120px;
 }
 
+.article-mb-1 {
+	margin-bottom: 80px;
+}
+
 .article-title-medium {
 	font-size: 36px;
 }
@@ -17,10 +21,6 @@
 
 .article-text:last-child {
 	margin-bottom: 0;
-}
-
-.article-mb-1 {
-	margin-bottom: 80px;
 }
 
 .article-mb-2 {

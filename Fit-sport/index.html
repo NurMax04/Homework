@@ -21,8 +21,8 @@
 	<body>
 		<header class="header">
 			<div class="container">
-				<div class="header-inner">
-					<a href="/">
+				<div class="header__inner">
+					<a class="header__logo-img" href="/">
 						<img
 							src="./img/logo-icon.svg"
 							width="84"
@@ -30,25 +30,30 @@
 							alt="Логотип"
 						/>
 					</a>
-					<div class="text-sub phone">
-						<p>Первое посещение бесплатно</p>
-						<a href="+79282822882">+7 (928) 282-28-82</a>
+					<div class="header__phone text-sub">
+						<p class="header__phone-text">Первое посещение бесплатно</p>
+						<a class="header__phone-link" href="+79282822882"
+							>+7 (928) 282-28-82</a
+						>
 					</div>
 				</div>
 			</div>
 		</header>
 		<section class="hero section decor">
-			<div class="container hero-container">
-				<div class="title hero-info">
-					<h1>Подтянутое тело <strong>за месяц</strong> тренировок</h1>
-					<p class="text">
+			<div class="container hero__container">
+				<div class="hero__info">
+					<h1 class="hero__info-title">
+						Подтянутое тело
+						<strong class="hero__info-title-accent">за месяц</strong> тренировок
+					</h1>
+					<p class="hero__info-text text">
 						Программа тренировки включает в себя разнообразные упражнения,
 						направленные на развитие силы и мышечного тонуса.
 					</p>
 					<a class="button" href="#">Посмотреть программу</a>
 				</div>
-				<div class="hero-images">
-					<p class="hero-choose text">Выбери своего тренера</p>
+				<div class="hero__images">
+					<p class="hero__choose text">Выбери своего тренера</p>
 					<img
 						src="./img/sporty-woman-img.jpg"
 						width="347"
@@ -67,8 +72,8 @@
 		<section class="news section">
 			<div class="container">
 				<h2 class="title-large">Последние новости</h2>
-				<div class="news-container">
-					<article class="news-article">
+				<div class="news__container">
+					<article class="news__article">
 						<header>
 							<img
 								src="./img/news/news-1-img.jpg"
@@ -76,18 +81,23 @@
 								height="203"
 								alt="Спортивный зал"
 							/>
-							<div class="news-info">
-								<time class="news-date text-sub" datetime="2024-04-19">
+							<div class="news__article-header-info">
+								<time
+									class="news__article-header-info-date text-sub"
+									datetime="2024-04-19"
+								>
 									19.04.2024
 								</time>
 								<h3 class="text">Открытие нового филиала в центре города!</h3>
 							</div>
 						</header>
-						<footer>
-							<a class="news-link" href="article.html">Подробнее</a>
+						<footer class="news__article-footer">
+							<a class="news__article-footer-link" href="article.html"
+								>Подробнее</a
+							>
 						</footer>
 					</article>
-					<article class="news-article">
+					<article class="news__article">
 						<header>
 							<img
 								src="./img/news/news-2-img.jpg"
@@ -95,8 +105,11 @@
 								height="203"
 								alt="Группа женщин занимается спортом"
 							/>
-							<div class="news-info">
-								<time class="news-date text-sub" datetime="2024-04-17">
+							<div class="news__article-header-info">
+								<time
+									class="news__article-header-info-date text-sub"
+									datetime="2024-04-17"
+								>
 									17.04.2024
 								</time>
 								<h3 class="text">
@@ -104,11 +117,13 @@
 								</h3>
 							</div>
 						</header>
-						<footer>
-							<a class="news-link" href="article.html">Подробнее</a>
+						<footer class="news__article-footer">
+							<a class="news__article-footer-link" href="article.html"
+								>Подробнее</a
+							>
 						</footer>
 					</article>
-					<article class="news-article">
+					<article class="news__article">
 						<header>
 							<img
 								src="./img/news/news-3-img.jpg"
@@ -116,8 +131,11 @@
 								height="203"
 								alt="Группа женщин в зале занимается на велодорожке"
 							/>
-							<div class="news-info">
-								<time class="news-date text-sub" datetime="2024-04-13">
+							<div class="news__article-header-info">
+								<time
+									class="news__article-header-info-date text-sub"
+									datetime="2024-04-13"
+								>
 									13.04.2024
 								</time>
 								<h3 class="text">
@@ -125,11 +143,13 @@
 								</h3>
 							</div>
 						</header>
-						<footer>
-							<a class="news-link" href="article.html">Подробнее</a>
+						<footer class="news__article-footer">
+							<a class="news__article-footer-link" href="article.html"
+								>Подробнее</a
+							>
 						</footer>
 					</article>
-					<article class="news-article">
+					<article class="news__article">
 						<header>
 							<img
 								src="./img/news/news-4-img.jpg"
@@ -137,15 +157,20 @@
 								height="203"
 								alt="Женщина бежит на беговом дорожке"
 							/>
-							<div class="news-info">
-								<time class="news-date text-sub" datetime="2024-04-08">
+							<div class="news__article-header-info">
+								<time
+									class="news__article-header-info-date text-sub"
+									datetime="2024-04-08"
+								>
 									08.04.2024
 								</time>
 								<h3 class="text">Открыт конкурс на лучший фитнес-челлендж</h3>
 							</div>
 						</header>
-						<footer>
-							<a class="news-link" href="article.html">Подробнее</a>
+						<footer class="news__article-footer">
+							<a class="news__article-footer-link" href="article.html"
+								>Подробнее</a
+							>
 						</footer>
 					</article>
 				</div>
@@ -154,7 +179,7 @@
 		<section class="faq section decor">
 			<div class="container">
 				<h2 class="title-large">Вопросы и ответы</h2>
-				<div class="faq-container">
+				<div class="faq__container">
 					<img
 						src="./img/sporty-woman-2-img.jpg"
 						width="492"
@@ -222,9 +247,9 @@
 			</div>
 		</section>
 		<footer class="footer">
-			<div class="footer-top">
+			<div class="footer__top">
 				<div class="container">
-					<a class="footer-logo" href="/">
+					<a class="footer__logo" href="/">
 						<img
 							src="./img/logo-icon.svg"
 							width="84"
@@ -232,13 +257,15 @@
 							alt="Логотип"
 						/>
 					</a>
-					<nav class="menu">
-						<ul>
-							<li><a href="#">Клубы</a></li>
-							<li><a href="#">Тренировки</a></li>
-							<li><a href="#">Абонементы</a></li>
-							<li><a href="#">Программа лояльности</a></li>
-							<li><a href="#">Контакты</a></li>
+					<nav class="footer__menu">
+						<ul class="footer__menu-ul">
+							<li><a class="footer__menu-link" href="#">Клубы</a></li>
+							<li><a class="footer__menu-link" href="#">Тренировки</a></li>
+							<li><a class="footer__menu-link" href="#">Абонементы</a></li>
+							<li>
+								<a class="footer__menu-link" href="#">Программа лояльности</a>
+							</li>
+							<li><a class="footer__menu-link" href="#">Контакты</a></li>
 						</ul>
 					</nav>
 				</div>
