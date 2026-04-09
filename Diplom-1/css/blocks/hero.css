@@ -1,0 +1,25 @@
+.hero__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	outline: 2px solid red;
+	background-color: var(--background-color);
+}
+
+.hero__content {
+	max-width: 577px;
+}
+
+.hero__title {
+	font-weight: 900;
+	font-size: 57px;
+	line-height: 112%;
+	color: var(--black);
+}
+
+.hero-img {
+	display: block;
+	max-width: 720px;
+	height: auto;
+	width: 100%;
+}
