@@ -18,6 +18,7 @@
 }
 
 .hero-img {
+	transform: scale(0.2)
 	display: block;
 	max-width: 720px;
 	height: auto;
