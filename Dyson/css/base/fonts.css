@@ -1,65 +1,65 @@
 @font-face {
-	font-family: "NAMU";
-	src:
-		local("NAMU Pro"),
-		local("NAMU-Pro"),
-		url("../../fonts/NAMU-Pro.woff2") format("woff2");
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
+  font-family: "NAMU";
+  src:
+    local("NAMU Pro"),
+    local("NAMU-Pro"),
+    url("../../fonts/NAMU-Pro.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: "OpenSans_Condensed";
-	src:
-		local("OpenSans_Condensed light"),
-		local("OpenSans_Condensed-Light"),
-		url("../../fonts/OpenSans_Condensed-Light.woff2") format("woff2");
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
+  font-family: "OpenSans Condensed";
+  src:
+    local("OpenSans_Condenseb Bold"),
+    local("OpenSans_Condenseb-Bold"),
+    url("../../fonts/OpenSans_Condensed-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: "OpenSans_Condensed";
-	src:
-		local("OpenSans_Condensed Bold"),
-		local("OpenSans_Condensed-Bold"),
-		url("../../fonts/OpenSans_Condensed-Bold.woff2") format("woff2");
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
+  font-family: "OpenSans Condensed";
+  src:
+    local("OpenSans_Condenseb Light"),
+    local("OpenSans_Condenseb-Light"),
+    url("../../fonts/OpenSans_Condensed-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: "OpenSans_Condensed";
-	src:
-		local("OpenSans_Condensed SemiBold"),
-		local("OpenSans_Condensed-SemiBold"),
-		url("../../fonts/OpenSans_Condensed-SemiBold.woff2") format("woff2");
-	font-weight: 600;
-	font-style: normal;
-	font-display: swap;
+  font-family: "OpenSans Condensed";
+  src:
+    local("OpenSans_Condenseb Medium"),
+    local("OpenSans_Condenseb-Medium"),
+    url("../../fonts/OpenSans_Condensed-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: "OpenSans_Condensed";
-	src:
-		local("OpenSans_Condensed Regular"),
-		local("OpenSans_Condensed-Regular"),
-		url("../../fonts/OpenSans_Condensed-Regular.woff2") format("woff2");
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
+  font-family: "OpenSans Condensed";
+  src:
+    local("OpenSans_Condenseb Regular"),
+    local("OpenSans_Condenseb-Regular"),
+    url("../../fonts/OpenSans_Condensed-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: "OpenSans_Condensed";
-	src:
-		local("OpenSans_Condensed Medium"),
-		local("OpenSans_Condensed-Medium"),
-		url("../../fonts/OpenSans_Condensed-Medium.woff2") format("woff2");
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
+  font-family: "OpenSans Condensed";
+  src:
+    local("OpenSans_Condenseb SemiBold"),
+    local("OpenSans_Condenseb-SemiBold"),
+    url("../../fonts/OpenSans_Condensed-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }

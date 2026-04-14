@@ -1,0 +1,17 @@
+.header__container {
+	background-color: var(--black);
+}
+
+.menu__list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 280px;
+}
+
+.menu__link {
+	font-family: var(--second-family);
+	font-weight: 900;
+	font-size: 20px;
+	color: var(--white);
+}

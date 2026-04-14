@@ -1,7 +1,10 @@
 /* base */
 @import "./base/fonts.css";
-@import "./base/vars.css";
 @import "./base/globals.css";
+@import "./base/vars.css";
 @import "./base/normalize.css";
 
 /* blocks */
+@import "./blocks/header.css";
+@import "./blocks/hero.css";
+@import "./blocks/production.css";
