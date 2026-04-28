@@ -15,7 +15,7 @@
 	/* container */
 	--container-width: 1280px;
 	--container-padding-inline: 15px;
-	--container-margin-block: 150px;
+	--container-margin-block: clamp(90px, 4.375rem + 6.25vw, 150px);
 
 	/* fonts */
 	--font-family: "OpenSans Condensed", sans-serif;
