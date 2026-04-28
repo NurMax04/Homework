@@ -1,145 +1,272 @@
 <!doctype html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dyson</title>
-    <link rel="stylesheet" href="./css/index.css" />
-    <link
-      rel="shortcut icon"
-      href="./icon/logo-dyson.svg"
-      type="image/x-icon"
-    />
-  </head>
-  <body class="page__body">
-    <header class="container header__container">
-      <nav class="header__menu">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link" href="#">
-              <img src="./icon/burger-menu.svg" alt="Меню" />
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">
-              <img src="./icon/logo-dyson.svg" alt="Логотип компании Dyson" />
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">О нас</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Доставка и оплата</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Регистрация продукта</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Сервис</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Сертификаты и лицензии</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">
-              <img src="./icon/cart.svg" alt="Корзина" />
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="container hero__container">
-        <div class="hero__content">
-          <h1 class="content__title title-large">
-            <span>Уникальные технологии</span>
-            <span>для ухода за волосами</span>
-          </h1>
-          <p class="title-p">
-            <span>Идеальная укладка для всех типов волос </span>
-            <span>вместе с Dyson</span>
-          </p>
-          <button class="hero__button">Подробнее</button>
-        </div>
-        <picture>
-          <img
-            class="hero__img"
-            src="./image/hero-img.png"
-            alt="Девушка сушит волосы с феном Dyson "
-          />
-        </picture>
-      </section>
-      <section class="production__container container">
-        <div class="production__categories">
-          <a href="#" class="production__item">
-            <header>
-              <img src="./image/sale-img.jpg" alt="Категория Акции" />
-            </header>
-            <footer class="production__item-footer">
-              <h3 class="production__title title-xs">Акции</h3>
-              <span>Подробнее</span>
-              <svg>
-                <use href="./icon/sprite.svg#right-arrow"></use>
-              </svg>
-            </footer>
-          </a>
-          <a href="#" class="production__item">
-            <img src="./image/fens-img.jpg" alt="Категория Фены" />
-            <h3 class="production__title title-xs">Фены</h3>
-            <svg>
-              <use href="./icon/sprite.svg#right-arrow"></use>
-            </svg>
-          </a>
-          <a href="#" class="production__item">
-            <img src="./image/stailer-img.jpg" alt="Категория Стайлеры" />
-            <h3 class="production__title title-xs">Стайлеры</h3>
-            <svg>
-              <use href="./icon/sprite.svg#right-arrow"></use>
-            </svg>
-          </a>
-          <a href="#" class="production__item">
-            <img
-              src="./image/straighteners-img.jpg"
-              alt="Категория Выпрямители"
-            />
-            <h3 class="production__title title-xs">Выпрямители</h3>
-            <svg>
-              <use href="./icon/sprite.svg#right-arrow"></use>
-            </svg>
-          </a>
-          <a href="#" class="production__item">
-            <img src="./image/sale-img.jpg" alt="Категория Акции" />
-            <h3 class="production__title title-xs">Акции</h3>
-            <svg>
-              <use href="./icon/sprite.svg#right-arrow"></use>
-            </svg>
-          </a>
-          <a href="#" class="production__item">
-            <img src="./image/fens-img.jpg" alt="Категория Фены" />
-            <h3 class="production__title title-xs">Фены</h3>
-            <svg>
-              <use href="./icon/sprite.svg#right-arrow"></use>
-            </svg>
-          </a>
-          <a href="#" class="production__item">
-            <img src="./image/stailer-img.jpg" alt="Категория Стайлеры" />
-            <h3 class="production__title title-xs">Стайлеры</h3>
-            <svg>
-              <use href="./icon/sprite.svg#right-arrow"></use>
-            </svg>
-          </a>
-          <a href="#" class="production__item">
-            <img
-              src="./image/straighteners-img.jpg"
-              alt="Категория Выпрямители"
-            />
-            <h3 class="production__title title-xs">Выпрямители</h3>
-            <svg>
-              <use href="./icon/sprite.svg#right-arrow"></use>
-            </svg>
-          </a>
-        </div>
-      </section>
-    </main>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dyson</title>
+		<link rel="stylesheet" href="./css/index.css" />
+		<link
+			rel="shortcut icon"
+			href="./icons/logo-dyson.svg"
+			type="image/x-icon"
+		/>
+	</head>
+	<body class="page__body">
+		<header class="header">
+			<div class="header__container">
+				<button
+					class="header__burger burger header__actions"
+					aria-label="Открыть меню"
+					aria-expanded="false"
+					aria-controls="header__menu"
+				>
+					<svg>
+						<use
+							class="burger__icon-menu c"
+							href="./icons/header-sprite.svg#burger-menu"
+						></use>
+						<use
+							class="burger__icon-cross"
+							href="./icons/header-sprite.svg#cross"
+						></use>
+					</svg>
+				</button>
+				<a class="logo header__logo" href="/">
+					<img
+						class="logo__img"
+						src="./icons/logo-dyson.svg"
+						alt="Логотип Dyson"
+					/>
+				</a>
+				<nav
+					class="menu header__menu"
+					id="header__menu"
+					aria-label="Главное меню"
+				>
+					<ul class="menu__list title-xs">
+						<li class="menu__item">
+							<a href="#" class="menu link">О нас </a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu link">Доставка и оплата </a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu link">Регистрация продукта </a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu link">Сервис </a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu link">Сертификаты и лицензии </a>
+						</li>
+					</ul>
+				</nav>
+				<button
+					class="header__actions-button header__actions"
+					title="Корзина"
+					aria-label="Корзина"
+				>
+					<svg>
+						<use
+							class="header__actions-icon"
+							href="./icons/header-sprite.svg#cart"
+						></use>
+					</svg>
+				</button>
+			</div>
+		</header>
+		<main>
+			<section class="hero">
+				<div class="hero__container container">
+					<div class="hero__content">
+						<h1 class="title-large content__title">
+							<span>Уникальные технологии</span>
+							<span>для ухода за волосами</span>
+						</h1>
+						<p class="content__discription title-p">
+							Идеальная укладка для всех типов волос вместе с Dyson
+						</p>
+						<a class="content__button" href="#">Подробнее</a>
+					</div>
+					<picture class="hero__img">
+						<img
+							src="./image/hero-img.png"
+							alt="Девушка сушать волосы с феном"
+						/>
+					</picture>
+				</div>
+			</section>
+			<section class="production">
+				<div class="production__container container">
+					<a href="#" class="production__item">
+						<header class="pr__header">
+							<img class="pr__img" src="./image/sale-img.jpg" alt="Акции" />
+						</header>
+						<footer class="pr__footer">
+							<h3 class="pr_footer-title title-md">Акции</h3>
+							<span class="pr__footer-link title-p"
+								>Подробнее
+								<svg class="pr__footer-svg" width="34" height="34">
+									<use xlink:href="./icons/sprite.svg#right-arrow"></use>
+								</svg>
+							</span>
+						</footer>
+					</a>
+					<a href="#" class="production__item">
+						<header class="pr__header">
+							<img class="pr__img" src="./image/fens-img.jpg" alt="Фены" />
+						</header>
+						<footer class="pr__footer">
+							<h3 class="pr_footer-title title-md">Фены</h3>
+							<span class="pr__footer-link title-p"
+								>Подробнее
+								<svg class="pr__footer-svg" width="34" height="34">
+									<use xlink:href="./icons/sprite.svg#right-arrow"></use>
+								</svg>
+							</span>
+						</footer>
+					</a>
+					<a href="#" class="production__item">
+						<header class="pr__header">
+							<img
+								class="pr__img"
+								src="./image/stailer-img.jpg"
+								alt="Стайлеры"
+							/>
+						</header>
+						<footer class="pr__footer">
+							<h3 class="pr_footer-title title-md">Стайлеры</h3>
+							<span class="pr__footer-link title-p"
+								>Подробнее
+								<svg class="pr__footer-svg" width="34" height="34">
+									<use xlink:href="./icons/sprite.svg#right-arrow"></use>
+								</svg>
+							</span>
+						</footer>
+					</a>
+					<a href="#" class="production__item">
+						<header class="pr__header">
+							<img
+								class="pr__img"
+								src="./image/straighteners-img.jpg"
+								alt="Выпрямители"
+							/>
+						</header>
+						<footer class="pr__footer">
+							<h3 class="pr_footer-title title-md">Выпрямители</h3>
+							<span class="pr__footer-link title-p"
+								>Подробнее
+								<svg class="pr__footer-svg" width="34" height="34">
+									<use xlink:href="./icons/sprite.svg#right-arrow"></use>
+								</svg>
+							</span>
+						</footer>
+					</a>
+					<a href="#" class="production__item">
+						<header class="pr__header">
+							<img class="pr__img" src="./image/sale-img.jpg" alt="Акции" />
+						</header>
+						<footer class="pr__footer">
+							<h3 class="pr_footer-title title-md">Акции</h3>
+							<span class="pr__footer-link title-p"
+								>Подробнее
+								<svg class="pr__footer-svg" width="34" height="34">
+									<use xlink:href="./icons/sprite.svg#right-arrow"></use>
+								</svg>
+							</span>
+						</footer>
+					</a>
+					<a href="#" class="production__item">
+						<header class="pr__header">
+							<img class="pr__img" src="./image/fens-img.jpg" alt="Фены" />
+						</header>
+						<footer class="pr__footer">
+							<h3 class="pr_footer-title title-md">Фены</h3>
+							<span class="pr__footer-link title-p"
+								>Подробнее
+								<svg class="pr__footer-svg" width="34" height="34">
+									<use xlink:href="./icons/sprite.svg#right-arrow"></use>
+								</svg>
+							</span>
+						</footer>
+					</a>
+					<a href="#" class="production__item">
+						<header class="pr__header">
+							<img
+								class="pr__img"
+								src="./image/stailer-img.jpg"
+								alt="Стайлеры"
+							/>
+						</header>
+						<footer class="pr__footer">
+							<h3 class="pr_footer-title title-md">Стайлеры</h3>
+							<span class="pr__footer-link title-p"
+								>Подробнее
+								<svg class="pr__footer-svg" width="34" height="34">
+									<use xlink:href="./icons/sprite.svg#right-arrow"></use>
+								</svg>
+							</span>
+						</footer>
+					</a>
+					<a href="#" class="production__item">
+						<header class="pr__header">
+							<img
+								class="pr__img"
+								src="./image/straighteners-img.jpg"
+								alt="Выпрямители"
+							/>
+						</header>
+						<footer class="pr__footer">
+							<h3 class="pr_footer-title title-md">Выпрямители</h3>
+							<span class="pr__footer-link title-p"
+								>Подробнее
+								<svg class="pr__footer-svg">
+									<use xlink:href="./icons/sprite.svg#right-arrow"></use>
+								</svg>
+							</span>
+						</footer>
+					</a>
+				</div>
+			</section>
+			<section class="about">
+				<div class="about__container container">
+					<div class="about__content">
+						<h2 class="title-large about__title">
+							Мнение экспертов о технике Dyson
+						</h2>
+						<p class="title-p about__text">
+							Сегодня многие стилисты и салоны красоты в своей работе используют
+							технику от Dyson.
+						</p>
+						<p class="title-p about__text">
+							Несмотря на высокую стоимость, техника Dyson помогает экономить.
+							Мастера тратят меньше времени на сушку и укладку волос, благодаря
+							чему успевают обслужить большее количество клиентов. Также
+							устройства от Dyson потребляют значительно меньше электроэнергии,
+							не теряя свою мощность.
+						</p>
+						<p class="title-p about__text">
+							Фены Dyson универсальны. Они подходят для сушки разных типов
+							волос. Насадки из комплекта помогают создавать укладки на любой
+							вкус. Функциональность девайсов впечатляет не меньше, чем их
+							уникальный дизайн.
+						</p>
+						<p class="title-p about__text">
+							Ведущие стилисты отмечают, что техника Dyson для ухода за волосами
+							идеально подходят для длительной работы за счет своей
+							эргономичности. А за счет бесшумности инновационного мотора
+							использование устройств стало максимально комфортным.
+						</p>
+					</div>
+					<picture>
+						<img
+							src="./image/about-img.png"
+							alt="Девушка пользуется феном"
+							class="about__img"
+						/>
+					</picture>
+				</div>
+			</section>
+		</main>
+	</body>
 </html>

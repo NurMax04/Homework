@@ -1,0 +1,33 @@
+.about {
+	background-color: var(--svetlyi-gray);
+}
+
+.about__container {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+.about__content {
+	max-width: 744px;
+	z-index: var(--layer-2);
+}
+
+.about__title {
+	padding-bottom: 40px;
+}
+
+.about__text {
+	max-width: 670px;
+	padding-bottom: 20px;
+}
+
+.about__img {
+	position: absolute;
+	bottom: 1;
+	right: 0;
+	max-width: 600px;
+	max-height: 600px;
+	z-index: var(--layer-1);
+	padding-bottom: 50px;
+}
