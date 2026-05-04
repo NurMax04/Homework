@@ -6,7 +6,7 @@
 	padding-top: 6px;
 	padding-bottom: 7px;
 	background-color: var(--black);
-	z-index: var(--layer-2);
+	z-index: var(--layer-3);
 }
 
 .header__container {
