@@ -17,7 +17,7 @@
 
 @media (width <= 576px) {
 	.production__container {
-		padding-inline: 30px;
+		padding-inline: 20px;
 	}
 }
 

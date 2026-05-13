@@ -1,57 +1,56 @@
 .page {
-  font-family: var(--font-family);
-  font-weight: 400;
-  /* color: var(--white); */
-  scroll-behavior: smooth;
-  scroll-padding-top: 98px;
+	font-family: var(--font-family);
+	font-weight: 400;
+	scroll-behavior: smooth;
+	scroll-padding-top: 98px;
 }
 
 .page__body {
-  min-width: 325px;
-  background-color: var(--white);
+	min-width: 325px;
+	background-color: var(--white);
 }
 
 .page__body--no-scroll {
-  overflow-y: hidden;
+	overflow-y: hidden;
 }
 
 .header__container {
-  max-width: var(--container-width);
-  padding-inline: var(--container-padding-inline);
-  margin-inline: auto;
+	max-width: var(--container-width);
+	padding-inline: var(--container-padding-inline);
+	margin-inline: auto;
 }
 
 .container {
-  max-width: var(--container-width);
-  padding-inline: var(--container-padding-inline);
-  margin-block: var(--container-margin-block);
-  margin-inline: auto;
+	max-width: var(--container-width);
+	padding-inline: var(--container-padding-inline);
+	margin-block: var(--container-margin-block);
+	margin-inline: auto;
 }
 
 .title-large {
-  font-family: var(--second-family);
-  font-weight: 900;
-  font-size: 42px;
-  color: var(--title-color);
+	font-family: var(--second-family);
+	font-weight: 900;
+	font-size: 42px;
+	color: var(--title-color);
 }
 
 .title-md {
-  font-family: var(--second-family);
-  font-weight: 900;
-  font-size: 30px;
-  color: var(--title-color);
+	font-family: var(--second-family);
+	font-weight: 900;
+	font-size: 30px;
+	color: var(--title-color);
 }
 
 .title-xs {
-  font-family: var(--second-family);
-  font-weight: 900;
-  font-size: 20px;
-  color: var(--black);
+	font-family: var(--second-family);
+	font-weight: 900;
+	font-size: 20px;
+	color: var(--black);
 }
 
 .title-p {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 20px;
-  color: var(--title-color);
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 20px;
+	color: var(--title-color);
 }

@@ -13,8 +13,8 @@
 		0 4px 41px 0 var(--shadow-color), 0 4px 41px 0 var(--shadow-color);
 
 	/* container */
-	--container-width: 1280px;
-	--container-padding-inline: 15px;
+	--container-width: 1360px;
+	--container-padding-inline: 20px;
 	--container-margin-block: clamp(90px, 4.375rem + 6.25vw, 150px);
 
 	/* fonts */

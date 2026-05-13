@@ -47,10 +47,6 @@
 }
 
 @media (width <= 768px) {
-	.header {
-		padding: 0 70px;
-	}
-
 	.menu__list {
 		display: none;
 	}
@@ -63,13 +59,13 @@
 
 @media (width <= 576px) {
 	.header {
-		padding: 2px 20px;
+		padding-block: 2px;
 	}
 
 	.logo__img {
-		padding-left: 10px;
+		/* padding-left: 10px; */
 		padding-bottom: 0px;
-		transform: translateX(-30px);
+		/* transform: translateX(-30px); */
 	}
 
 	.header__actions svg {
