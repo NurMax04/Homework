@@ -1,0 +1,130 @@
+.faq {
+	padding-top: 150px;
+	background-color: #f8f8f8;
+}
+
+.faq__container {
+	padding-bottom: 150px;
+	margin-bottom: 0;
+}
+@media (width <= 768px) {
+	.faq_container {
+		padding-bottom: 70px;
+	}
+}
+@media (width <= 670px) {
+	.faq_container {
+		padding-bottom: 46px;
+	}
+}
+
+.faq__details {
+	border-bottom: 1px solid #ababab;
+}
+.faq__title {
+	font-size: 42px;
+	padding-bottom: 59px;
+	border-bottom: 1px solid #ababab;
+}
+
+@media (width <= 460px) {
+	.faq-strong {
+		display: none;
+	}
+}
+@media (width <= 1120px) {
+	.faq__title {
+		font-size: 26px;
+		padding-bottom: 40px;
+	}
+}
+
+@media (width <= 460px) {
+	.faq__title {
+		font-size: 20px;
+		padding-bottom: 38px;
+	}
+}
+.faq__summary-title {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 150%;
+	color: var(--second-color);
+	padding-block: 34px;
+}
+
+@media (width <= 1120px) {
+	.faq__summary-title {
+		font-size: 16px;
+		padding-block: 18px;
+	}
+}
+@media (width <= 460px) {
+	.faq__summary-title {
+		font-weight: 300;
+		font-size: 13px;
+		padding-block: 16px;
+	}
+}
+details[open] summary::after {
+	rotate: 135deg;
+	transition: rotate 200ms ease-out;
+}
+
+summary {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+	list-style: none;
+	cursor: pointer;
+	gap: 24px;
+}
+
+summary::marker {
+	display: none;
+}
+
+summary::after {
+	content: "";
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	background: url(../../icons/faq-cross.svg) no-repeat center / cover;
+	flex-shrink: 0;
+	transition: rotate 200ms;
+}
+
+@media (width <= 1120px) {
+	summary::after {
+		width: 32px;
+		height: 32px;
+	}
+}
+@media (width <= 460px) {
+	summary::after {
+		width: 24px;
+		height: 24px;
+	}
+}
+
+.faq__text {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 150%;
+	color: var(--second-color);
+	padding-bottom: 50px;
+}
+@media (width <= 1120px) {
+	.faq__text {
+		font-size: 14px;
+		padding-bottom: 20px;
+	}
+}
+@media (width <= 460px) {
+	.faq__text {
+		color: #333;
+		font-size: 11px;
+		padding-bottom: 10px;
+	}
+}

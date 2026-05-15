@@ -1,33 +1,33 @@
 :root {
-	/* colors */
-	--temnyi-gray: #dddddd;
-	--svetlyi-gray: #f8f8f8;
-	--accent-color: #c5358c;
-	--title-color: #111;
-	--black: #000;
-	--white: #fff;
-	--shadow-color: #0000000d;
+  /* colors */
+  --temnyi-gray: #dddddd;
+  --svetlyi-gray: #f8f8f8;
+  --accent-color: #c5358c;
+  --title-color: #111;
+  --black: #000;
+  --white: #fff;
+  --shadow-color: #0000000d;
 
-	/* shadow */
-	--box-shadow:
-		0 4px 41px 0 var(--shadow-color), 0 4px 41px 0 var(--shadow-color);
+  /* shadow */
+  --box-shadow:
+    0 4px 41px 0 var(--shadow-color), 0 4px 41px 0 var(--shadow-color);
 
-	/* container */
-	--container-width: 1360px;
-	--container-padding-inline: 20px;
-	--container-margin-block: clamp(90px, 4.375rem + 6.25vw, 150px);
+  /* container */
+  --container-width: 1360px;
+  --container-padding-inline: 20px;
+  /* --container-margin-block: clamp(90px, 4.375rem + 6.25vw, 150px); */
 
-	/* fonts */
-	--font-family: "OpenSans Condensed", sans-serif;
-	--second-family: "NAMU", sans-serif;
+  /* fonts */
+  --font-family: "OpenSans Condensed", sans-serif;
+  --second-family: "NAMU", sans-serif;
 
-	/* transition */
-	--transition-time: 0.3s;
+  /* transition */
+  --transition-time: 0.3s;
 
-	/* layers */
-	--layer-negative: -1;
-	--layer-0: 0;
-	--layer-1: 1;
-	--layer-2: 2;
-	--layer-3: 3;
+  /* layers */
+  --layer-negative: -1;
+  --layer-0: 0;
+  --layer-1: 1;
+  --layer-2: 2;
+  --layer-3: 3;
 }

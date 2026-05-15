@@ -23,7 +23,6 @@
 .container {
 	max-width: var(--container-width);
 	padding-inline: var(--container-padding-inline);
-	margin-block: var(--container-margin-block);
 	margin-inline: auto;
 }
 
