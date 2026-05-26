@@ -84,6 +84,8 @@ switch (true) {
 	case weight > 5:
 		price = 15;
 		break;
+	default:
+		price = 0;
 }
 alert(`Стоимость ${price}$`);
 
