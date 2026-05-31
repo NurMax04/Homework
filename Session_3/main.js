@@ -17,11 +17,11 @@
 // alert(`Факториал этого числа ${factorial}`);
 
 //                     Задача 3
-
+// const boardSize = 8;
 // let line = "";
 
-// for (let i = 1; i <= 8; i++) {
-// 	for (let j = 1; j <= 8; j++) {
+// for (let i = 1; i <= boardSize; i++) {
+// 	for (let j = 1; j <= boardSize; j++) {
 // 		if ((i + j) % 2 === 0) {
 // 			line += "#";
 // 		} else {
