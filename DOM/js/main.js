@@ -25,7 +25,6 @@ const createTodo = (todos, text) => {
 
 const completeTodoById = (todos, todoId) => {
 	const todo = todos.find(todo => todo[todoKeys.id] === todoId);
-
 	if (!todo) {
 		console.error(errTodoNotFound(todoId));
 		return null;
@@ -44,59 +43,54 @@ const deleteTodoById = (todos, todoId) => {
 	return todos;
 };
 
-//                       Задача 1
-
-// При помощи метода querySelector получаем элементы .form, .input и .todos
-
-const form = document.querySelector("form");
-const input = document.querySelector(".input");
+// UI
+const formElement = document.querySelector(".form");
+const inputElement = document.querySelector(".input");
 const todosElement = document.querySelector(".todos");
 
-//                       Задача 2
-
-// Создаем функцию createTodoElement(text), которая будет создавать todo в виде разметки
-
 const createTodoElement = todo => {
-	const newLi = document.createElement("li");
-	const todoText = document.createElement("div");
-	const todoActions = document.createElement("div");
-	const todoCompleteAction = document.createElement("button");
-	const todoDeleteAction = document.createElement("button");
-
-	newLi.classList.add("todo");
-
-	todoText.classList.add("todo-text");
-	todoText.textContent = todo.text;
-
-	todoCompleteAction.classList.add("button");
-	todoCompleteAction.textContent = "✔";
-
-	todoDeleteAction.classList.add("button");
-	todoDeleteAction.textContent = "✖";
-
-	todoActions.classList.add("todo-actions");
-	todoActions.append(todoCompleteAction, todoDeleteAction);
-
-	newLi.append(todoText, todoActions);
-
-	return newLi;
+	const todoElement = document.createElement("li");
+	todoElement.classList.add("todo");
+	todoElement.dataset.id = todo[todoKeys.id];
+	todoElement.innerHTML = `
+	<div class="todo-text">${todo[todoKeys.text]}</div>
+  <div class="todo-actions">
+		<button class="button-complete button">&#10004;</button>
+		<button class="button-delete button">&#10006;</button>
+	</div>
+	`;
+	return todoElement;
 };
-
-const createButton = document.querySelector(".button-create");
-
-//                       Задача 3
-
-// Создаем функцию handleCreateTodo(todos, text), которая будет вызывать createTodo и createTodoElement
 
 const handleCreateTodo = (todos, text) => {
 	const todo = createTodo(todos, text);
 	const todoElement = createTodoElement(todo);
-
 	todosElement.prepend(todoElement);
 };
 
-createButton.addEventListener("click", () => {
+formElement.addEventListener("submit", event => {
 	event.preventDefault();
 
-	handleCreateTodo(todos, input.value);
+	const text = inputElement.value.trim();
+	if (!text) return;
+
+	handleCreateTodo(todos, text);
+	inputElement.value = "";
+});
+
+todosElement.addEventListener("click", ({ target }) => {
+	const todo = target.closest(".todo");
+	if (!todo) return;
+
+	const todoId = Number(todo.dataset.id);
+
+	if (target.matches(".button-complete")) {
+		completeTodoById(todos, todoId);
+		todo.classList.toggle("completed");
+	}
+
+	if (target.matches(".button-delete")) {
+		deleteTodoById(todos, todoId);
+		todo.remove();
+	}
 });
