@@ -28,7 +28,7 @@
 						></use>
 						<use
 							class="burger__icon-close"
-							href="./icons/header-sprite.svg#cross"
+							href="./icons/header-sprite.svg#close"
 						></use>
 					</svg>
 				</button>
@@ -37,7 +37,7 @@
 						class="logo-img"
 						class="logo-icon"
 						src="./icons/logo-dyson.svg"
-						alt="Логитип Фен dyson"
+						alt="Логотип Фен dyson"
 					/>
 				</a>
 				<nav
@@ -312,9 +312,8 @@
 					</picture>
 				</div>
 			</section>
-			
-				<section class="advantages">
-				<div class="container advantages__container">
+			<section class="advantages" id="about-us">
+				<div  class="container advantages__container">
 					<h2 class="advantages__title title-large">Почему выбирают нас</h2>
 					<div class="advantages__list">
 						<article class="advantages__item">
@@ -438,7 +437,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="products">
+			<section class="products" id="register-product">
 				<div class="product__container container">
 					<div class="product__header">
 						<h2 class="product__title title-large">
@@ -490,50 +489,8 @@
 										<div class="card-meta__discount">-15%</div>
 									</div>
 									<div class="card__price">
-										<p class="title-large price__new">59 990 Р</p>
-										<p class="title-md price__old">69 990 Р</p>
-									</div>
-								</div>
-								<footer class="card__footer">
-									<div class="footer__counter">
-										<div class="control__counter">
-											<button class="counter__minus">
-												<svg width="20" height="2">
-													<use href="./icons/sprite.svg#counter-minus"></use>
-												</svg>
-											</button>
-											<span class="counter__quantity">1</span>
-											<button class="counter__plus">
-												<svg width="20" height="20">
-													<use href="./icons/sprite.svg#counter-plus"></use>
-												</svg>
-											</button>
-										</div>
-										<button class="footer__basket">В корзину</button>
-									</div>
-								</footer>
-							</div>
-							<div class="product__card">
-								<header class="card__header">
-									<img
-										src="./image/product-img-2.webp"
-										alt="Фен Dyson Supersonic HD07  с 5 насадками и подставкой"
-									/>
-								</header>
-								<div class="card__body">
-									<p class="title-p card__title">
-										Фен Dyson Supersonic HD07  с 5 насадками и подставкой
-									</p>
-									<div class="card__meta">
-										<div class="card-meta__stock">
-											<div class="stock__dot"></div>
-											<p class="stock__text">В наличии</p>
-										</div>
-										<div class="card-meta__discount">-15%</div>
-									</div>
-									<div class="card__price">
-										<p class="title-large price__new">47 990Р</p>
-										<p class="title-md price__old">51 990 Р</p>
+										<p class="title-large price__new"  data-price="59990">59 990 Р</p>
+										<p class="title-md price__old" data-price="69990">69 990 Р</p>
 									</div>
 								</div>
 								<footer class="card__footer">
@@ -575,8 +532,50 @@
 										<div class="card-meta__discount">-15%</div>
 									</div>
 									<div class="card__price">
-										<p class="title-large price__new">46 990Р</p>
-										<p class="title-md price__old">51 990 Р</p>
+										<p class="title-large price__new" data-price="46990">46 990 Р</p>
+										<p class="title-md price__old" data-price="51990">51 990 Р</p>
+									</div>
+								</div>
+								<footer class="card__footer">
+									<div class="footer__counter">
+										<div class="control__counter">
+											<button class="counter__minus">
+												<svg width="20" height="2">
+													<use href="./icons/sprite.svg#counter-minus"></use>
+												</svg>
+											</button>
+											<span class="counter__quantity">1</span>
+											<button class="counter__plus">
+												<svg width="20" height="20">
+													<use href="./icons/sprite.svg#counter-plus"></use>
+												</svg>
+											</button>
+										</div>
+										<button class="footer__basket">В корзину</button>
+									</div>
+								</footer>
+							</div>
+							<div class="product__card">
+								<header class="card__header">
+									<img
+										src="./image/product-img-2.webp"
+										alt="Фен Dyson Supersonic HD07 с 5 насадками и подставкой"
+									/>
+								</header>
+								<div class="card__body">
+									<p class="title-p card__title">
+										Фен Dyson Supersonic HD07 с 5 насадками и подставкой
+									</p>
+									<div class="card__meta">
+										<div class="card-meta__stock">
+											<div class="stock__dot"></div>
+											<p class="stock__text">В наличии</p>
+										</div>
+										<div class="card-meta__discount">-15%</div>
+									</div>
+									<div class="card__price">
+										<p class="title-large price__new" data-price="47990">47 990 Р</p>
+										<p class="title-md price__old" data-price="51990">51 990 Р</p>
 									</div>
 								</div>
 								<footer class="card__footer">
@@ -618,50 +617,8 @@
 										<div class="card-meta__discount">-15%</div>
 									</div>
 									<div class="card__price">
-										<p class="title-large price__new">59 990 Р</p>
-										<p class="title-md price__old">69 990 Р</p>
-									</div>
-								</div>
-								<footer class="card__footer">
-									<div class="footer__counter">
-										<div class="control__counter">
-											<button class="counter__minus">
-												<svg width="20" height="2">
-													<use href="./icons/sprite.svg#counter-minus"></use>
-												</svg>
-											</button>
-											<span class="counter__quantity">1</span>
-											<button class="counter__plus">
-												<svg width="20" height="20">
-													<use href="./icons/sprite.svg#counter-plus"></use>
-												</svg>
-											</button>
-										</div>
-										<button class="footer__basket">В корзину</button>
-									</div>
-								</footer>
-							</div>
-							<div class="product__card">
-								<header class="card__header">
-									<img
-										src="./image/product-img-2.webp"
-										alt="Фен Dyson Supersonic HD07  с 5 насадками и подставкой"
-									/>
-								</header>
-								<div class="card__body">
-									<p class="title-p card__title">
-										Фен Dyson Supersonic HD07  с 5 насадками и подставкой
-									</p>
-									<div class="card__meta">
-										<div class="card-meta__stock">
-											<div class="stock__dot"></div>
-											<p class="stock__text">В наличии</p>
-										</div>
-										<div class="card-meta__discount">-15%</div>
-									</div>
-									<div class="card__price">
-										<p class="title-large price__new">47 990Р</p>
-										<p class="title-md price__old">51 990 Р</p>
+										<p class="title-large price__new"  data-price="59990">59 990 Р</p>
+										<p class="title-md price__old" data-price="69990">69 990 Р</p>
 									</div>
 								</div>
 								<footer class="card__footer">
@@ -703,8 +660,50 @@
 										<div class="card-meta__discount">-15%</div>
 									</div>
 									<div class="card__price">
-										<p class="title-large price__new">46 990Р</p>
-										<p class="title-md price__old">51 990 Р</p>
+										<p class="title-large price__new" data-price="46990">46 990 Р</p>
+										<p class="title-md price__old" data-price="51990">51 990 Р</p>
+									</div>
+								</div>
+								<footer class="card__footer">
+									<div class="footer__counter">
+										<div class="control__counter">
+											<button class="counter__minus">
+												<svg width="20" height="2">
+													<use href="./icons/sprite.svg#counter-minus"></use>
+												</svg>
+											</button>
+											<span class="counter__quantity">1</span>
+											<button class="counter__plus">
+												<svg width="20" height="20">
+													<use href="./icons/sprite.svg#counter-plus"></use>
+												</svg>
+											</button>
+										</div>
+										<button class="footer__basket">В корзину</button>
+									</div>
+								</footer>
+							</div>
+							<div class="product__card">
+								<header class="card__header">
+									<img
+										src="./image/product-img-2.webp"
+										alt="Фен Dyson Supersonic HD07 с 5 насадками и подставкой"
+									/>
+								</header>
+								<div class="card__body">
+									<p class="title-p card__title">
+										Фен Dyson Supersonic HD07 с 5 насадками и подставкой
+									</p>
+									<div class="card__meta">
+										<div class="card-meta__stock">
+											<div class="stock__dot"></div>
+											<p class="stock__text">В наличии</p>
+										</div>
+										<div class="card-meta__discount">-15%</div>
+									</div>
+									<div class="card__price">
+										<p class="title-large price__new" data-price="47990">47 990 Р</p>
+										<p class="title-md price__old" data-price="51990">51 990 Р</p>
 									</div>
 								</div>
 								<footer class="card__footer">
@@ -800,7 +799,7 @@
 								<p class="reviews__content-text reviews__content-text-mb">
 									Пользуюсь около месяца, хочу поделиться впечатлениями.
 									Во-первых, фен очень легкий, удобно лежит в руке, не скользит.
-									Кнопка включения и выключения расположена удобно,  а не где-то
+									Кнопка включения и выключения расположена удобно, а не где-то
 									сбоку. Мощность у фена хорошая, волосы сушит быстро
 								</p>
 								<div class="reviews__content-image">
@@ -1088,7 +1087,7 @@
 					</div>
 				</div>
 			</section>
-      			<section class="feedback">
+      <section class="feedback" id="service">
 				<div class="container feedback__container">
 					<div class="feedback__contact">
 						<h2 class="feedback__title feedback__contact-title title-large">
@@ -1138,7 +1137,7 @@
 								class="footer__logo-img logo-img"
 								class="logo-icon"
 								src="./icons/logo-dyson.svg"
-								alt="Логитип Фен dyson"
+								alt="Логотип Фен dyson"
 							/>
 						</a>
 					</div>
@@ -1269,13 +1268,38 @@
 					</a>
 				</div>
 							</div>
-							<a href="" class="footer__copyright menu__link">Интернет-магазин dysmarket.ru, 2022 &copy; Все права защищены.</a>
-						</div>		
-													
-					</div>
-						<a href="" class="footer__copyright footer__copyright-hide menu__link">Интернет-магазин dysmarket.ru, 2022 &copy; Все права защищены.</a>
-				</div>
-			</div>
+							<a href="" class="footer__copyright ">Интернет-магазин dysmarket.ru, 2022 &copy; Все права защищены.</a>
+						</div>	
 		</footer>
+		<!-- Модальное окно -->
+		 <div class="modal__card">
+			<div class="modal__body">
+				<div class="modal__header">
+					<h2 class="modal__title">Корзина</h2>
+					<button class="modal__close">
+						<svg class="close-icon" width="36" height="36">
+							<use class="close-svg" href="./icons/header-sprite.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+						<div class="modal__content modal__content--empty">
+					<div class="modal__empty-icon">
+						<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<use href="./icons/sprite.svg#basket"></use>
+						</svg>
+					</div>
+					<p class="modal__empty-text">Ваша корзина пуст</p>
+				</div>
+				<div class="modal__footer">
+					<div class="modal__footer-check">
+						<p class="modal__footer-title">Итого:</p>
+						<p class="modal__footer-price">0 Р</p>
+					</div>
+					<div class="modal__footer-actions">
+						<button class="modal__button modal__button--secondary" type="button">Продолжить покупки</button>
+						<button class="modal__button modal__button--primary" type="button">Оформить заказ</button>
+					</div>
+				</div>
+		 </div>
 	</body>
 </html>

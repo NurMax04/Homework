@@ -54,3 +54,7 @@
 		stroke: var(--accent-color);
 	}
 }
+
+.page__body--no--scroll {
+	overflow: hidden;
+}
