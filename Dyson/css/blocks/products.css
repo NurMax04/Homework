@@ -143,8 +143,8 @@
 
 @media (any-hover: hover) {
 	.product__select {
+		color: var(--title-color)
 		transition:
-			border-color var(--transition-time),
 			color var(--transition-time);
 	}
 }
