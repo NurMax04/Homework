@@ -1,0 +1,51 @@
+.page {
+	font-family: var(--font-family);
+	font-weight: 400;
+	scroll-behavior: smooth;
+	scroll-padding-top: 98px;
+}
+
+.page__body {
+	min-width: 325px;
+	background-color: var(--white);
+}
+
+.page__body--no-scroll {
+	overflow-y: hidden;
+}
+
+.header__container {
+	max-width: var(--container-width);
+	padding-inline: var(--container-padding-inline);
+	margin-inline: auto;
+}
+
+.container {
+	max-width: var(--container-width);
+	padding-inline: var(--container-padding-inline);
+	margin-inline: auto;
+}
+
+.title-l {
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 54px;
+	text-transform: uppercase;
+	color: var(--white);
+}
+
+.title-p {
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 15px;
+	color: var(--white);
+}
+
+.global__btn {
+	border-radius: 9px;
+	width: 479px;
+	height: 60px;
+	margin-block: 60px 110px;
+	background: var(--gradient-button);
+	box-shadow: var(--shadow-button);
+}

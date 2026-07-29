@@ -1,0 +1,35 @@
+.header {
+	position: relative;
+	padding-top: 30px;
+	background: var(--gradient-bg);
+}
+
+.header__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__phone {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.header__phone-link {
+	font-size: 18px;
+	color: var(--white);
+}
+
+.header__bg-img {
+	position: absolute;
+	top: 0;
+	left: 50%;
+
+	transform: translateX(-50%) rotate(-180deg);
+}
+
+.header__bg-img img {
+	width: auto;
+	height: 130px;
+	opacity: 0.5;
+}

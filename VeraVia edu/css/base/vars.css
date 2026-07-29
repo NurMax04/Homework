@@ -1,0 +1,46 @@
+:root {
+	/* colors */
+	--bg-color: #022335;
+	--bg-color-light: #043a41;
+	--accent-color: #4abcec;
+	--black: #000;
+	--white: #fff;
+
+	/* gradients */
+	--gradient-button: linear-gradient(
+		180deg,
+		rgba(3, 225, 255, 0.66) 0%,
+		#13cdc2 100%
+	);
+	--gradient-title: linear-gradient(180deg, #fff 31.75%, #1a3031 100%);
+	--gradient-bg: linear-gradient(
+		90deg,
+		hsla(187, 88%, 14%, 1) 0%,
+		hsla(201, 93%, 11%, 1) 100%
+	);
+	--gradient-bg-rev: linear-gradient(
+		70deg,
+		hsla(201, 93%, 11%, 1) 0%,
+		hsla(187, 88%, 14%, 1) 180%
+	);
+
+	/* shadows */
+	--shadow-button: 0 7px 20px -7px #00e0ff;
+
+	/* fonts */
+	--font-family: "avenirnextcyr", sans-serif;
+
+	/* container */
+	--container-width: 1202px;
+	--container-padding-inline: 20px;
+
+	/* transition */
+	--transition-time: 0.25s;
+
+	/* layers */
+	--layer-negative: -1;
+	--layer-0: 0;
+	--layer-1: 1;
+	--layer-2: 2;
+	--layer-3: 3;
+}
