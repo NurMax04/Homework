@@ -66,6 +66,14 @@
 					alt=""
 				/>
 			</section>
+			<div class="consultation__content">
+				<button class="consultation__icon-container">
+					<svg class="consultation__icon" width="40" height="40">
+						<use href="./icons/sprite.svg#consultation-icon"></use>
+					</svg>
+				</button>
+				<p class="consultation__text">Бесплатная консультация</p>
+			</div>
 			<section class="advantages">
 				<div class="adv__container container">
 					<h2 class="title-l adv__title">
@@ -1112,76 +1120,8 @@
 					</ul>
 				</div>
 			</section>
-			<section class="global__modal">
-				<div
-					class="modal"
-					role="dialog"
-					aria-modal="true"
-					aria-hidden="true"
-					tabindex="-1"
-				>
-					<div class="modal__overlay"></div>
-					<div class="modal__dialog">
-						<div class="modal__content">
-							<button
-								class="modal__close"
-								type="button"
-								aria-label="Close modal"
-							>
-								<svg width="24" height="24" aria-hidden="true">
-									<use href="./icons/sprite.svg#modal__close"></use>
-								</svg>
-							</button>
-							<form class="modal__form" novalidate>
-								<h2 class="modal__title title-l">
-									<span>Записаться</span> на ознакомительный вебинар
-								</h2>
-								<p class="modal__text">
-									Оставьте ваши данные, и мы свяжемся с вами в ближайшее время.
-								</p>
-								<label class="modal__field">
-									<span class="modal__label">Полное имя</span>
-									<input
-										type="text"
-										name="fullName"
-										placeholder="Введите ваше имя"
-										required
-									/>
-								</label>
-								<label class="modal__field">
-									<span class="modal__label">Телефон</span>
-									<input
-										type="tel"
-										name="phone"
-										placeholder="+7 (999) 999-99-99"
-										required
-									/>
-								</label>
-								<label class="modal__field">
-									<span class="modal__label">Email</span>
-									<input
-										type="email"
-										name="email"
-										placeholder="your@email.com"
-										required
-									/>
-								</label>
-								<label class="modal__field">
-									<span class="modal__label">Дата вебинара</span>
-									<input
-										type="text"
-										name="webinarDate"
-										placeholder="Выберите дату"
-										required
-									/>
-								</label>
-								<button class="modal__submit" type="submit">Записаться</button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</section>
 		</main>
+
 		<footer class="footer">
 			<div class="footer__container container">
 				<div class="footer__content">
@@ -1256,62 +1196,68 @@
 				</div>
 			</div>
 		</footer>
+		<div
+			class="modal"
+			role="dialog"
+			aria-modal="true"
+			aria-hidden="true"
+			tabindex="-1"
+		>
+			<div class="modal__overlay"></div>
+			<div class="modal__dialog">
+				<div class="modal__content">
+					<button class="modal__close" type="button" aria-label="Close modal">
+						<svg width="36" height="36" aria-hidden="true">
+							<use href="./icons/sprite.svg#modal__close"></use>
+						</svg>
+					</button>
+					<form class="modal__form" novalidate>
+						<h2 class="modal__title title-l">
+							<span>Записаться</span> на ознакомительный вебинар
+						</h2>
+						<p class="modal__text">
+							Оставьте ваши данные, и мы свяжемся с вами в ближайшее время.
+						</p>
+						<label class="modal__field">
+							<span class="modal__label">Полное имя</span>
+							<input
+								type="text"
+								name="fullName"
+								placeholder="Введите ваше имя"
+								required
+							/>
+						</label>
+						<label class="modal__field">
+							<span class="modal__label">Телефон</span>
+							<input
+								type="tel"
+								name="phone"
+								placeholder="+7 (999) 999-99-99"
+								required
+							/>
+						</label>
+						<label class="modal__field">
+							<span class="modal__label">Email</span>
+							<input
+								type="email"
+								name="email"
+								placeholder="your@email.com"
+								required
+							/>
+						</label>
+						<label class="modal__field">
+							<span class="modal__label">Дата вебинара</span>
+							<input
+								type="text"
+								name="webinarDate"
+								placeholder="Выберите дату"
+								required
+							/>
+						</label>
+						<button class="modal__submit" type="submit">Записаться</button>
+					</form>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
-                                                                                                                                                                                                                                                                                                             g
-                src="./images/news_img-2.png"
-                alt=""
-                class="vacancies__item-img"
-              />
-              <h4 class="vacancies__item-title">Требуется администратор</h4>
-              <p class="title-p vacancies__item-text">
-                Опыт работы . . . . . . . . . . . . . . . . . . . . . . . . . .
-                . . . . от 1 года <br />
-                Образование . . . . . . . . . . . . . . . . . . . . . . . . . .
-                . . . . Высшее <br />
-                Возраст . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-                . . . . . . . 21-35 лет
-              </p>
-              <a href="#" class="vacancies__item-link">Подробнее</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer__container container">
-        <div class="footer__content">
-          <img class="footer__icon" src="./icons/veravia-icon.svg" alt="" />
-          <div class="footer__info">
-            <div class="footer__info-connection">
-              <div class="connection__mail">
-                <svg width="25" height="18">
-                  <use href="./icons/sprite.svg#mail"></use>
-                </svg>
-                <p class="connection__mail-text">veravlaedu@gmail.com</p>
-              </div>
-              <div class="connection__phone">
-                <svg width="25" height="25">
-                  <use href="./icons/sprite.svg#h_phone-icon"></use>
-                </svg>
-                <p class="connection__phone-text">+ 82 (10) 7526-9192</p>
-              </div>
-            </div>
-            <div class="footer__social">
-              <p class="title-p social__text">Мы в соц сетях</p>
-              <ul class="social__links-list">
-                <li class="social__link-item">
-                  <a href="#" class="social__link">
-                    <svg width="24" height="24">
-                      <use href="./icons/sprite.svg#facebook-icon"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__link-item">
-                  <a href="#" class="social__link">
-                    <svg width="30" height="30">
-                      <use href="./icons/sprite.svg#messenger-icon"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__link-item"

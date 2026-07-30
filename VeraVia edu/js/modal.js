@@ -1,11 +1,39 @@
-const modalTriggers = document.querySelectorAll(".global__btn");
+const modalTriggers = document.querySelectorAll(
+	".global__btn, .consultation__icon-container, .consultation__content",
+);
 const modal = document.querySelector(".modal");
 const modalOverlay = document.querySelector(".modal__overlay");
 const modalCloseButton = document.querySelector(".modal__close");
 const modalForm = document.querySelector(".modal__form");
+const consultationContent = document.querySelector(".consultation__content");
+const programSection = document.querySelector(".program");
+const hiddenConsultationClass = "consultation__content--hidden";
 
 let lastFocusedElement = null;
 let modalOpen = false;
+
+const updateConsultationVisibility = isVisible => {
+	if (!consultationContent) {
+		return;
+	}
+
+	consultationContent.classList.toggle(hiddenConsultationClass, !isVisible);
+};
+
+const bindConsultationVisibility = () => {
+	if (!consultationContent || !programSection) {
+		return;
+	}
+
+	const handleScroll = () => {
+		const programRect = programSection.getBoundingClientRect();
+		const shouldHide = programRect.bottom <= 0;
+		updateConsultationVisibility(!shouldHide);
+	};
+
+	handleScroll();
+	window.addEventListener("scroll", handleScroll, { passive: true });
+};
 
 const toggleBodyScroll = () => {
 	document.body.classList.toggle("modal-open", modalOpen);
@@ -78,6 +106,8 @@ const bindEvents = () => {
 	modalTriggers.forEach(trigger => {
 		trigger.addEventListener("click", () => openModal(trigger));
 	});
+
+	bindConsultationVisibility();
 
 	modalCloseButton?.addEventListener("click", closeModal);
 	modalOverlay?.addEventListener("click", handleOverlayClick);

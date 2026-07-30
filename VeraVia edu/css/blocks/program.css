@@ -91,8 +91,8 @@
 	height: 32px;
 	transform: rotate(-180deg);
 	transition: transform 0.3s ease;
-	border: 1px solid var(--gradient-bg);
-	background: var(--gradient-bg);
+	/* border: 1px solid var(--accent-color); */
+	background: var(--gradient-mini-button);
 }
 
 .program__btn.active .btn__item-arrow {
@@ -109,15 +109,6 @@
 	max-height: 2000px;
 }
 
-.global__btn {
-	border-radius: 9px;
-	width: 479px;
-	height: 60px;
-	margin-block: 60px 110px;
-	background: var(--gradient-button);
-	box-shadow: var(--shadow-button);
-}
-
 /*---------------------------------------Стили для списка------------------------------------------*/
 
 .chapter__item {
@@ -132,4 +123,15 @@
 	justify-content: center;
 	align-items: center;
 	flex-shrink: 0;
-	width: 1
+	font-size: 12px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: var(--accent-color);
+}
+
+.chapter__title {
+	font-size: 16px;
+	padding-bottom: 20px;
+	color: var(--accent-color);
+}

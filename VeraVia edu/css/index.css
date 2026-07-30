@@ -15,4 +15,6 @@
 @import "./blocks/author.css";
 @import "./blocks/news.css";
 @import "./blocks/vacancies.css";
+@import "./blocks/modal.css";
 @import "./blocks/footer.css";
+@import "./blocks/consultation.css";
