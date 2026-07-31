@@ -132,6 +132,7 @@
 
 @media (width <= 576px) {
   .hero__guarantee {
+    max-width: 300px;
     gap: 10px;
     padding-bottom: 10px;
   }
@@ -142,8 +143,8 @@
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  width: 71px;
-  height: 71px;
+  /* width: 71px;
+  height: 71px; */
   background: linear-gradient(
     180deg,
     rgba(0, 224, 255, 0.11) 0%,
@@ -152,50 +153,44 @@
 }
 @media (width <= 992px) {
   .hero__guarantee-icon {
-    width: 55px;
-    height: 55px;
+    width: 60px;
+    height: 60px;
     border-radius: 9px;
   }
 }
 
 @media (width <= 768px) {
   .hero__guarantee-icon {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 7px;
   }
 }
 @media (width <= 576px) {
   .hero__guarantee-icon {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 5px;
   }
 }
 
+@media (width <= 420px) {
+  .hero__guarantee-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 .hero__guarantee-icon svg {
+  padding: 5px;
   width: 39px;
   height: 39px;
 }
 
 @media (width <= 768px) {
   .hero__guarantee-icon svg {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-@media (width <= 576px) {
-  .hero__guarantee-icon svg {
-    width: 20px;
-    height: 20px;
-  }
-}
-
-@media (width <= 420px) {
-  .hero__guarantee-icon svg {
-    width: 14px;
-    height: 14px;
+    width: 35px;
+    height: 35px;
   }
 }
 
@@ -280,8 +275,7 @@
     position: static;
     top: auto;
     bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 100%;
     width: auto;
   }
 }
