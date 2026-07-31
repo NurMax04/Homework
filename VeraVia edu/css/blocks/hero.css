@@ -120,13 +120,12 @@
   gap: 30px;
   max-width: 576px;
   padding-bottom: 100px;
-  margin-inline: auto;
 }
 
-@media (width <= 768px) {
+@media (width <= 992px) {
   .hero__guarantee {
     gap: 20px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
   }
 }
 
@@ -143,8 +142,8 @@
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  /* width: 71px;
-  height: 71px; */
+  width: 71px;
+  height: 71px;
   background: linear-gradient(
     180deg,
     rgba(0, 224, 255, 0.11) 0%,
@@ -182,13 +181,13 @@
 }
 
 .hero__guarantee-icon svg {
-  padding: 5px;
   width: 39px;
   height: 39px;
 }
 
 @media (width <= 768px) {
   .hero__guarantee-icon svg {
+    padding: 5px;
     width: 35px;
     height: 35px;
   }
