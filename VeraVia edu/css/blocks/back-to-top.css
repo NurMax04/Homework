@@ -1,41 +1,32 @@
-.consultation__content {
-	display: none;
+.back-to-top {
 	position: fixed;
-	top: 15%;
-	left: 5%;
+	bottom: 220px;
+	left: 10%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 130px;
+	gap: 90px;
 	z-index: var(--layer-2);
-	/* transition:
-		opacity 0.3s ease,
-		transform 0.3s ease; */
-}
-
-.consultation__content--hidden {
-	opacity: 0;
-}
-
-.is-hidden {
 	opacity: 0;
 	pointer-events: none;
 }
 
-.consultation__icon-container {
+.is-visible {
+	opacity: 0;
+	pointer-events: auto;
+}
+
+.back-to-top__btn {
 	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	width: 80px;
 	height: 80px;
 	border-radius: 50%;
 	background-color: var(--accent-color);
 	box-shadow: var(--shadow-button);
-	animation: consultationPulse 2.2s ease-out infinite;
+	animation: backToTopPulse 2.2s ease-out infinite;
 }
 
-@keyframes consultationPulse {
+@keyframes backToTopPulse {
 	0% {
 		transform: scale(1);
 		box-shadow: 0 0 0 0 #00f4ff8c;
@@ -52,12 +43,18 @@
 	}
 }
 
-.consultation__text {
+.back-to-top__btn svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.back-to-top__text {
 	font-weight: 600;
 	font-size: 10px;
 	letter-spacing: 0.36em;
-	cursor: pointer;
 	text-transform: uppercase;
-	transform: rotate(-90deg);
 	color: var(--accent-color);
+	transform: rotate(90deg);
 }

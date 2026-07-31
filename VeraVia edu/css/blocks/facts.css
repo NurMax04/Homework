@@ -1,59 +1,60 @@
 .facts {
-  position: relative;
-  background: var(--gradient-bg-rev);
+	display: none;
+	position: relative;
+	background: var(--gradient-bg-rev);
 }
 
 .facts::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background: var(--accent-color);
-  box-shadow:
-    0 0 5px var(--accent-color),
-    0 0 15px var(--accent-color),
-    0 0 25px var(--accent-color);
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background: var(--accent-color);
+	box-shadow:
+		0 0 5px var(--accent-color),
+		0 0 15px var(--accent-color),
+		0 0 25px var(--accent-color);
 }
 
 .facts::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background: var(--accent-color);
-  box-shadow:
-    0 0 5px var(--accent-color),
-    0 0 15px var(--accent-color),
-    0 0 25px var(--accent-color);
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background: var(--accent-color);
+	box-shadow:
+		0 0 5px var(--accent-color),
+		0 0 15px var(--accent-color),
+		0 0 25px var(--accent-color);
 }
 
 .facts__title {
-  padding-block: 100px 70px;
+	padding-block: 100px 70px;
 }
 
 .facts__title span {
-  color: var(--accent-color);
+	color: var(--accent-color);
 }
 
 .facts__content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-  padding-bottom: 130px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 40px;
+	padding-bottom: 130px;
 }
 
 .facts__item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 533px;
-  gap: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 533px;
+	gap: 20px;
 }
 
 .facts__desc {
-  line-height: 150%;
+	line-height: 150%;
 }

@@ -1,4 +1,5 @@
 .author {
+	display: none;
 	position: relative;
 	background: var(--gradient-bg);
 	z-index: var(--layer-3);

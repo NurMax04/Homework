@@ -1,4 +1,5 @@
 .course {
+	display: none;
 	position: relative;
 
 	background: var(--gradient-bg);

@@ -1,4 +1,5 @@
 .program {
+	display: none;
 	position: relative;
 	background: var(--gradient-bg-rev);
 }
