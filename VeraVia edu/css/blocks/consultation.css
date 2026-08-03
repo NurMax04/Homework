@@ -1,5 +1,4 @@
 .consultation__content {
-	display: none;
 	position: fixed;
 	top: 15%;
 	left: 5%;
@@ -8,9 +7,6 @@
 	align-items: center;
 	gap: 130px;
 	z-index: var(--layer-2);
-	/* transition:
-		opacity 0.3s ease,
-		transform 0.3s ease; */
 }
 
 .consultation__content--hidden {
