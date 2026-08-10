@@ -114,7 +114,5 @@ template {
 }
 
 svg * {
-  display: inline-block;
-  vertical-align: middle;
   transition-property: fill, stroke;
 }
