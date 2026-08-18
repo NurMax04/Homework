@@ -1,0 +1,170 @@
+:root {
+	--bg: #a7a7a7;
+	--card: #ffffff;
+	--muted: #58595a;
+	--accent: #2b6cb0;
+	--radius: 12px;
+	--gap: 16px;
+}
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	margin: 0;
+	font-family: Inter, Roboto, Arial, sans-serif;
+	background: var(--bg);
+	color: #111827;
+	-webkit-font-smoothing: antialiased;
+}
+.container {
+	max-width: 900px;
+	margin: 20px auto;
+	padding: 16px;
+}
+.card {
+	background: var(--card);
+	border-radius: var(--radius);
+	padding: 16px;
+	box-shadow: 0 1px 0 rgba(16, 24, 40, 0.04);
+	margin-bottom: var(--gap);
+}
+.header-card {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+}
+.avatar-wrap {
+	position: relative;
+	min-width: 120px;
+}
+.avatar {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	object-fit: cover;
+	display: block;
+}
+.avatar-fallback {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	background: #e6e9ec;
+	color: #344054;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 600;
+}
+.header-info .name {
+	margin: 0;
+	font-size: 1.25rem;
+}
+.profession {
+	margin: 4px 0;
+	color: var(--muted);
+}
+.contact {
+	margin: 0;
+	color: var(--muted);
+	font-size: 0.9rem;
+}
+h2 {
+	margin-top: 0;
+}
+.skills ul {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	padding-left: 1rem;
+}
+.experience .job {
+	margin-bottom: 12px;
+}
+.period {
+	color: var(--muted);
+	font-size: 0.9rem;
+	margin: 4px 0;
+}
+.footer {
+	font-size: 0.95rem;
+	color: var(--muted);
+}
+
+/* Larger screens: two-column layout for some sections */
+@media (min-width: 720px) {
+	.header-card {
+		padding: 20px;
+	}
+	.container {
+		padding: 24px;
+	}
+	.card {
+		padding: 20px;
+	}
+	/* На десктопе секции идут в один столбец для аккуратного отображения */
+	.skills,
+	.experience {
+		display: block;
+		width: 100%;
+	}
+}
+
+/* Mobile adjustments — ensure readability down to 320px */
+@media (max-width: 420px) {
+	.container {
+		margin: 8px;
+		padding: 12px;
+	}
+	.avatar,
+	.avatar-fallback {
+		width: 104px;
+		height: 104px;
+	}
+	.header-card {
+		gap: 10px;
+	}
+	.header-info .name {
+		font-size: 1.1rem;
+	}
+}
+
+@media (max-width: 320px) {
+	.container {
+		padding: 10px;
+		margin: 6px;
+	}
+	.header-card {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 12px;
+	}
+	.header-info {
+		margin-top: 6px;
+	}
+	.avatar,
+	.avatar-fallback {
+		width: 88px;
+		height: 88px;
+	}
+	.skills ul {
+		padding-left: 1rem;
+	}
+	.card {
+		padding: 12px;
+		border-radius: 10px;
+	}
+	.name {
+		font-size: 1rem;
+	}
+	.profession {
+		font-size: 0.95rem;
+	}
+	.contact {
+		font-size: 0.85rem;
+	}
+}
